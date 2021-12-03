@@ -1,0 +1,53 @@
+footer{
+    background-color: $footerBgColor;
+    padding-top: 2%;
+
+    h3{
+        padding-bottom:2%;
+    }
+
+    p, a, ul{
+        font-size:0.8em;
+    }
+
+    a{
+        font-family: roboto_bold;
+    }
+
+    ul{
+        @include flex($just: center);
+        padding: 0.5% 0;
+
+        li{
+            border-right: 1px solid black;
+            padding: 0 1%;
+        }
+        li:last-child{
+            border-right:0px;
+        }
+
+        li span{
+            font-family: roboto_bold;
+        }
+    }
+}
+
+// FOOTER FLEXBOX
+.footerFlex{
+    @include flex($just: space-between, $align: center, $dir: row, $wrap: nowrap);
+    margin-bottom:2%;
+}
+
+.footerLeft{
+    padding-left: 20%;
+    padding-right: 5%;
+
+    img{
+        width:100%;
+    }
+}
+.footerRight{
+    padding-right: 20%;
+    border-left: 1px solid black;
+    padding-left: 5%;
+}

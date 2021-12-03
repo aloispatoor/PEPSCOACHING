@@ -1,0 +1,275 @@
+// MEDIA QUERY 1200PX
+@media screen and (max-width:1200px){
+    h1{
+        font-size:3.5em;
+    }
+
+    .commentCards{
+        @include flex($just: space-evenly, $align: center, $dir: row, $wrap: wrap);
+
+        article{
+            height:60vh;
+        }
+    }
+
+    .discover{
+        @include flex($just:space-around, $align:flex-start, $wrap: wrap);
+        p{
+            line-height: 150%;
+            font-size:0.9em;
+        }
+        article{
+            height:60vh;
+            width:16vw;
+        }
+    }
+    #accompaniements{
+        .titleDetails{
+            margin : 5% 10%;
+        }
+    }
+    #blog{
+        .blogArticles{
+            article{
+                height:60vh;
+            }
+        }
+    }
+}
+
+// MEDIA QUERY 900PX
+@media screen and (max-width:900px) {
+    h1{
+        font-size:3em;
+    }
+
+    nav{
+        ul{
+            font-size:0.8em;
+        }
+    }
+
+    header{
+        nav{
+            ul{
+               @include flex ($just: flex-end, $align: flex-end, $dir: column, $wrap: nowrap);
+                padding-right:5%;
+               li{
+                   border:none;
+                   padding: 2% 0;
+               }
+            }
+        }
+    }
+    .button{
+        bottom: 5%;
+        left: calc(50% + 30px);
+    }
+
+    .discover{
+        @include flex($just:space-around, $align:center, $dir: column, $wrap: wrap);
+        gap:10%;
+        article{
+            width:40vw;
+            height: 40vh;
+        }
+        p{
+            line-height: 100%;
+            font-size:0.9em;
+        }
+        .coloredRectangle{
+            position: absolute;
+            z-index:-1;
+            top:8%;
+            height:5%;
+            width:100%;
+        }
+    }
+    #methodPeps{
+        .titleDetails{
+            padding-bottom: 8%;
+        }
+    }
+
+    .commentCards{
+        @include flex($just: space-evenly, $align: center, $dir: column, $wrap: nowrap);
+        article{
+            width: 75%;
+            height: 30vw;
+
+            img{
+                width:10%;
+            }
+        }
+    }
+
+    #accompaniements{
+        .titleDetails{
+            margin : 5% 20%;
+        }
+    }
+    .imgLeftBlog{
+        img{
+            width:150px;
+        }
+    }
+}
+
+// MEDIA QUERY 750PX
+@media screen and (max-width:750px) {
+    h1{
+        font-size:2em;
+    }
+    #intro{
+        height:30vh;
+    }
+    h2{
+        font-size:1.2em;
+    }
+    h3{
+        font-size:1em;
+    }
+    p, li, a{
+        font-size:0.8em;
+    }
+
+    .commentCards{
+        article{
+            font-size:0.8em;
+        }
+    }
+    .discover{
+        article{
+            font-size:0.8em;
+            height: 30vh;
+        }
+    } 
+}
+
+// MEDIA QUERY 600PX
+@media screen and (max-width:600px){
+    h1{
+        font-size:1.8em;
+    }
+    #intro{
+        height:25vh;
+    }
+    h2{
+        font-size:1em;
+    }
+    h3{
+        font-size:0.8em;
+    }
+    p, li, a{
+        font-size:0.6em;
+    }
+    footer p, footer a{
+        font-size:0.6em;
+    }
+    .blogArticles{
+        article{
+            height:35vh;
+        }
+    }
+    .commentCards{
+        article{
+            height:30vh;
+
+            img{
+                left:5%;
+                top:5%;
+            }
+        }
+    }
+    .imgLeftBlog{
+        img{
+            width:100px;
+        }
+    }
+}
+
+// MEDIA QUERY 450PX
+@media screen and (max-width:450px) {
+    #intro{
+        .button{
+            left:calc(50% - 45px);
+        }
+    }
+    h1{
+        font-size:1.5em;
+    }
+    .grid{
+        .textRight{
+            width:75%;
+        }
+        .imgLeft{
+            width:25%;
+            align-self: flex-start;
+            img{
+                height:100%;
+            }
+        }
+    }
+    .discover{
+        article{
+            height: 39vh;
+            .button{
+                left:calc(50% - 45px);
+            }
+            .coloredRectangle{
+                top:10px;
+            }
+
+        }
+    }
+    #methodPeps{
+        .titleDetails{
+            padding:0 5% 20% 5%;
+            .button{
+                left:calc(50% - 45px);
+            }
+        }
+    }
+    .cards{
+        @include flex ($just:center, $wrap:wrap, $dir: column);
+        article{
+            width:50%;
+        }
+    }
+    .commentCards{
+        article{
+            height:39vh;
+            img{
+                top:2%;
+                left:2%;
+            }
+        }
+    }
+    #blog{
+        article{
+            height: 45vh;
+        }
+    }
+    footer{
+        .footerLeft{
+            padding-left:1%;
+        }
+    }
+    .imgLeftBlog{
+        img{
+            width:75px;
+        }
+    }
+}
+
+// MEDIA QUERY 400PX
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 1.2em;
+    }
+    .imgLeftBlog{
+        img{
+            width:50px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+// FLEXBOX
+.grid{
+    @include flex ($just:space-around);
+    gap:10%;
+    margin: 0 10%;
+
+    // LEFT PART
+    .imgLeft{
+        width:50%;
+
+        img{
+            width:100%;
+        }
+    }
+
+    // RIGHT PART
+    .textRight{
+        width:50%;
+
+        .boldFont{
+            margin: 5% 0;
+        }
+
+        ul li{
+            list-style-type: '- ';
+        }
+    }
+}

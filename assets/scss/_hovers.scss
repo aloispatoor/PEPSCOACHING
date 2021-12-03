@@ -1,0 +1,36 @@
+.button{
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover{
+    @include button($bColor : #ff4676, $tColor: white );
+    box-shadow: 3px 3px $primaryColor;
+}
+
+#intro{
+    .button:hover{
+        @include button;
+    }
+}
+
+header{
+    nav{
+        ul{
+            a{
+                transition: all 0.5s ease-in-out;
+            }
+            a:hover{
+                text-shadow: 3px 3px $primaryColor;
+            }
+        }
+    }
+}
+
+footer{
+    a{
+        transition: all 0.3s ease-in;
+    }
+    a:hover{
+        color: $pinkColor;
+    }
+}

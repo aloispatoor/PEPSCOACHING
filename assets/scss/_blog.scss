@@ -1,0 +1,47 @@
+// TITLES
+#blog{
+    h2{
+        padding:0;
+    }
+    h3{
+        padding-top: 1%;
+        padding-bottom:2%;
+    }
+    .titleDetails{
+        margin-bottom:0;
+    }
+}
+
+// FLEXBOX
+.blogArticles{
+    @include flex($just: flex-start, $align: flex-start, $dir: column);
+    margin:0 0.5%;
+
+    article{
+        @include flex($just: space-around);
+        gap:5%;
+        margin-left:10%;
+        position:relative;
+        height: 50vh;
+        width: 80%;
+        
+    }
+    article:first-child{
+        border-bottom: 2px solid $primaryColor;
+    }
+}
+
+// LEFT AND RIGHT PARTS
+.textRightBlog{
+    .button{
+        position:absolute;
+        bottom:10%;
+        left: calc(50% - 75px);
+    }
+}
+
+.imgLeftBlog{
+    img{
+        width:300px;
+    }
+}

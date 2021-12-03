@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    color:black;
+}
+
+body{
+    font-family: roboto;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+    font-family: roboto_bold;
+}
+
+h1{
+    font-size:4em;
+    text-shadow: 0px 2px 3px black;
+    letter-spacing: 3px;
+}
+
+h2{
+    padding: 2% 0;
+    text-align:center;
+}
+
+img{
+    object-fit: cover;
+}
+
+.boldFont{
+    font-family:roboto_bold;
+}
+
+.button{
+    @include button;
+    font-family: roboto_bold;
+}
+
+.titleDetails{
+    text-align:center;
+    margin: 5% 0;
+}
+
+.separator{
+    text-align:center;
+    margin: 2% 0;
+}

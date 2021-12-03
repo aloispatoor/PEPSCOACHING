@@ -1,0 +1,68 @@
+// TITLE
+#accompaniements{
+    .titleDetails{
+        margin-bottom: 5%;
+        h2{
+            padding-bottom:0;
+        }
+        
+        p:nth-child(3){
+            padding-top:3%;
+        }
+    }
+}
+
+// FLEXBOX
+.discover{
+    @include flex($just:space-around, $align:flex-start);
+     article{
+        text-align:center;
+        position:relative;
+        height:50vh;
+        width:15vw;
+        h2{
+            position:relative;
+            margin-bottom:5%;
+            font-family: roboto_black;
+            background-color: rgb(255, 255, 255, 0);
+        }
+        p{
+            line-height: 300%;
+        }
+        .button{
+            position:absolute;
+            bottom: 10%;
+            left: calc(50% - 75px);
+        }
+    }
+}
+
+// COLORED RECTANGLES
+.coloredRectangle{
+    position: absolute;
+    z-index:-1;
+    top:5%;
+    height:5%;
+    width:100%;
+}
+
+#talents{
+    .coloredRectangle{
+        border: 1px solid $clearBlueColor;
+        background-color: $clearBlueColor;
+    }
+}
+
+#career{
+    .coloredRectangle{
+        border: 1px solid $yellowColor;
+        background-color: $yellowColor;
+    }
+}
+
+#commercialStrenght{
+    .coloredRectangle{
+        border: 1px solid $purpleColor;
+        background-color: $purpleColor;
+    }
+}

@@ -1,0 +1,16 @@
+@mixin flex ($just: flex-end, $align: center, $dir: row, $wrap: nowrap) {
+    display:flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin button($bColor : white, $tColor: #ff4676) {
+    background-color: $bColor;
+    color: $tColor;
+    border: 1px solid $tColor;
+    text-transform: uppercase;
+    border-radius : 5px;
+    padding: 10px 20px;
+}
